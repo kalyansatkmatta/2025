@@ -128,28 +128,33 @@
       to { width: 100%; }
     }
 
-    /* Telegram Button */
-    .btn {
-      display: block;
-      width: 100%;
-      max-width: 280px;
-      margin: 10px auto;
-      padding: 12px 20px;
-      border: 2px solid #00ffff;
-      border-radius: 30px;
+   .join-btn {
+      background: #00ffee;
+      color: #000;
       font-size: 1rem;
-      font-weight: 500;
+      font-weight: 700;
+      padding: 14px 40px;
+      border: none;
+      border-radius: 40px;
+      cursor: pointer;
+      box-shadow: 0 0 25px #00ffee;
       text-decoration: none;
-      color: #00ffff;
-      background: transparent;
-      box-shadow: 0 0 20px #00ffff;
-      transition: all 0.3s ease;
+      display: inline-block;
+      animation: pulse 1.6s infinite;
+      transition: transform 0.2s ease-in-out;
     }
 
-    .btn:hover {
-      background: #00ffff;
-      color: #000;
-      box-shadow: 0 0 25px #00ffff, 0 0 50px #00ffff;
+    .join-btn:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 0 15px #00ffee, 0 0 30px #00ffee;
+      }
+      50% {
+        box-shadow: 0 0 25px #00ffee, 0 0 50px #00ffee;
+      }
     }
 
     .note {
@@ -208,5 +213,27 @@
 
     animateSubscribers();
   </script>
+  <!-- Meta Pixel Code (Optimized for Speed) -->
+<script>
+window.addEventListener('load', function() {
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1822396645303128');
+  fbq('track', 'PageView');
+});
+</script>
+
+<noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1822396645303128&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
 </body>
 </html>
