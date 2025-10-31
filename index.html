@@ -128,33 +128,28 @@
       to { width: 100%; }
     }
 
-   .join-btn {
-      background: #00ffee;
-      color: #000;
+  /* Telegram Button */
+    .btn {
+      display: block;
+      width: 100%;
+      max-width: 280px;
+      margin: 10px auto;
+      padding: 12px 20px;
+      border: 2px solid #00ffff;
+      border-radius: 30px;
       font-size: 1rem;
-      font-weight: 700;
-      padding: 14px 40px;
-      border: none;
-      border-radius: 40px;
-      cursor: pointer;
-      box-shadow: 0 0 25px #00ffee;
+      font-weight: 500;
       text-decoration: none;
-      display: inline-block;
-      animation: pulse 1.6s infinite;
-      transition: transform 0.2s ease-in-out;
+      color: #00ffff;
+      background: transparent;
+      box-shadow: 0 0 20px #00ffff;
+      transition: all 0.3s ease;
     }
 
-    .join-btn:hover {
-      transform: scale(1.05);
-    }
-
-    @keyframes pulse {
-      0%, 100% {
-        box-shadow: 0 0 15px #00ffee, 0 0 30px #00ffee;
-      }
-      50% {
-        box-shadow: 0 0 25px #00ffee, 0 0 50px #00ffee;
-      }
+    .btn:hover {
+      background: #00ffff;
+      color: #000;
+      box-shadow: 0 0 25px #00ffff, 0 0 50px #00ffff;
     }
 
     .note {
